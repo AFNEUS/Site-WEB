@@ -1,4 +1,4 @@
-# SPRINT 1 ( 01/01 -> 11/01 )
+# SPRINT 1 ( 01/01 -> 18/01 )
 Objectifs du sprint: Mettre en place l'architecture de base du projet Angular et réaliser la quasi totalité de la documentation du projet .
 
 ## 📝 À faire
@@ -8,8 +8,9 @@ Objectifs du sprint: Mettre en place l'architecture de base du projet Angular et
 - [ ] Organiser les notes
 - [ ] Prévoir le prochain sprint
 - [ ] Écrire une V1 du cahier des charges
-- [ ] Récupérer (le 9) les avis des BN sur l’appli
-- [ ] Versionner sur GitHub
+- [x] Récupérer (le 9) les avis des BN sur l’appli
+- [x] Versionner sur GitHub
+ 
 
 - [ ] Répertoire conception à organiser
   - [ ] Créer le dossier Conception
@@ -54,7 +55,7 @@ Objectifs du sprint: Mettre en place l'architecture de base du projet Angular et
 ---
   
 
-# SPRINT 2 ( 12/01 -> 25/01 )
+# SPRINT 2 ( 19/01 -> 25/01 )
 Objectifs du sprint: 
 
 ## 📝 À faire

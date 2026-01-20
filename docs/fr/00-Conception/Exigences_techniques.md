@@ -1,0 +1,1 @@
+Ce fichier répertorie toutes les contraintes que notre logiciel doit respecter, tels que la performance, l'accessibilité, les langues, la sécurité, la confidentialité, le RGPD, la cohérence. Chaque exigence établit une jauge ou un scénario d'acceptabilité.

@@ -2,51 +2,73 @@
 
 ## Organisation des scénarios
 
-### Scénarios principaux (fonctionnalités de base)
+## Scénarios principaux (fonctionnalités de base)
 1. Découvrir l'Afneus pour la première fois
 2. Installer et configurer son compte membre
 3. Comprendre les services offerts par l'Afneus
 4. S'inscrire comme nouvelle association adhérente
+
+
 #### Authentification et Profil
+
 5. Créer un compte utilisateur
 6. Se connecter au site
-Réinitialiser son mot de passe oublié
-Compléter son profil utilisateur
-Se déconnecter en toute sécurité
+7. Réinitialiser son mot de passe oublié
+8. Compléter son profil utilisateur
+9. Se déconnecter en toute sécurité
+
+
 #### Navigation Vitrine
-Consulter la page d'accueil et les actualités
-Découvrir l'histoire et la mission de l'Afneus
-Consulter la liste des associations adhérentes
-Voir la composition du Bureau National
-Voir la composition du Conseil d'Administration
-### 📚 Scénarios Importants (Priorité 2)
+
+10. Consulter la page d'accueil et les actualités
+11. Découvrir l'histoire et la mission de l'Afneus
+12. Consulter la liste des associations adhérentes
+13. Voir la composition du Bureau National  
+**Voir la composition du Conseil d'Administration** (a voir)   
+
+
+##  Scénarios Importants (Priorité 2)
+
+  
 #### Ressources Documentaires
-Accéder au catalogue des ressources
-Rechercher une ressource spécifique
-Filtrer les ressources par catégorie
-Télécharger/Accéder à une ressource externe (Drive)
-Marquer une ressource comme favorite
-Consulter l'historique de ses ressources consultées
+
+14. Consulter la zone admin 
+15. Consulter la zone BN 
+16. Accéder au catalogue des ressources par le biais d'un pôle ( coté admin )
+17. Accéder au catalogue des ressources par le biais d'un pôle ( coté Bureau )
+18. Rechercher une ressource spécifique
+    (Filtrer les ressources par catégorie )
+19. Accéder à une ressource externe (Drive)
+20. Marquer une ressource comme favorite
+21. Consulter l'historique de ses ressources consultées
+
+
 #### Services Afneus
-Demander une formation Afneus
-S'inscrire au Concours Jeunes et Sciences
-Consulter l'exposition "Femmes en Science"
-Demander l'intervention d'un formateur
-Consulter le calendrier des événements Afneus
+
+
+22. Demander une ou des formation Afneus
+23. S'inscrire au Concours Jeunes et Sciences
+24. Consulter l'exposition "Femmes en Science et demander une réservation
+25. Consulter le calendrier des événements Afneus
+
+
 #### Communication
-Contacter le Bureau National via formulaire
-Envoyer un message à un membre du BN spécifique
-S'abonner à la newsletter Afneus
-Partager un contenu sur les réseaux sociaux
-### 🎮 Scénarios Gamification (Priorité 3)
+
+26. Contacter le Bureau National via formulaire
+27. Envoyer un message/mail à un membre du BN spécifique
+28. Consulter la newsletter Afneus
+29. Conslter les actualités de l'afneus 
+
+##  Scénarios Gamification (Priorité 3)
+
 #### Système de Points et Badges
-Consulter son profil de gamification
-Gagner des points en complétant une action
-Débloquer un badge
-Consulter le classement général
-Consulter son historique de points
-Participer à un défi mensuel
-Comparer son profil avec d'autres membres
+
+30. Consulter son profil de gamification
+31. Gagner des points en complétant un module de formation 
+32. Débloquer un badge
+33. Consulter le classement général
+34. Consulter son historique de points
+
 ### 🔧 Scénarios Administration (Priorité 4)
 #### Gestion des Utilisateurs
 Consulter la liste des utilisateurs inscrits

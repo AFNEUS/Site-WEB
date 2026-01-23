@@ -69,48 +69,73 @@
 33. Consulter le classement général
 34. Consulter son historique de points
 
-### 🔧 Scénarios Administration (Priorité 4)
+##  Scénarios Administration (Priorité 4)
+
+
 #### Gestion des Utilisateurs
-Consulter la liste des utilisateurs inscrits
-Modifier les rôles d'un utilisateur
-Désactiver un compte utilisateur
-Valider l'inscription d'une nouvelle association
-Exporter la liste des membres
+
+35. BN Consulter la liste des utilisateurs inscrits
+36.  Bn Modifier les rôles d'un utilisateur
+37. Bn Désactiver un compte utilisateur
+38. Valider l'inscription d'une nouvelle association
+    (Exporter la liste des membres) a voir 
+
 #### Gestion du Contenu
-Publier une actualité
-Modifier une page de la vitrine
-Ajouter une ressource au catalogue
-Supprimer ou archiver une ressource
-Modérer un contenu signalé
-Programmer la publication d'un article
+
+
+39. BN Publier une actualité
+40. Prez Modifier une page de la vitrine
+41. BN Ajouter une ressource au catalogue
+42. BN Supprimer ou archiver une ressource
+43. Prez Modérer un contenu signalé
+44. BN Programmer la publication d'un article
+
+
 #### Gestion des Services
-Consulter les demandes de formation en attente
-Valider ou refuser une demande de formation
-Assigner un formateur à une demande
-Consulter les inscriptions au Concours JeS
-Gérer le calendrier des événements
+
+
+
+45. BN Consulter les demandes de formation en attente
+46. BN Valider ou refuser une demande de formation
+47. Assigner un formateur à une demande
+48. BN Consulter les inscriptions au Concours JeS
+49. BN ou prez Gérer le calendrier des événements
+
+
 #### Gestion des Associations
-Ajouter une nouvelle association adhérente
-Modifier les informations d'une association
-Retirer une association du réseau
-Consulter les statistiques par association
+
+50. Prez Ajouter une nouvelle association adhérente
+51. Prez Modifier les informations d'une association
+52. Prez Retirer une association du réseau
+53. Prez Consulter les statistiques et informations générales par association
+
+<!-- partie commentée car a voir mais pas prioritaire 
 #### Monitoring et Statistiques
+
 Consulter le tableau de bord administrateur
 Voir les statistiques de fréquentation du site
 Analyser l'utilisation des ressources
 Consulter les rapports d'activité
 Exporter des données statistiques
-### 🌟 Scénarios Avancés (Priorité 5)
+-->
+
+## Scénarios Avancés (Priorité 5)
+
 #### Notifications et Alertes
-Recevoir une notification de validation de demande
-Être alerté d'un nouveau badge débloqué
-Recevoir un rappel d'événement à venir
-Consulter l'historique des notifications
+
+54. Recevoir une notification de validation de demande
+55. Être alerté d'un nouveau badge débloqué
+55. Recevoir un rappel d'événement à venir
+56. Consulter l'historique des notifications
+
 #### Personnalisation
-Personnaliser ses préférences de notifications
-Choisir ses centres d'intérêt
-Configurer son tableau de bord personnel
+
+57. Personnaliser ses préférences de notifications
+58. Choisir ses centres d'intérêt ( en terme d'actualités ?)
+
+
 #### Recherche et Découverte
+
 Utiliser la recherche globale sur le site
 Découvrir des ressources recommandées (par popularité)
 Explorer les ressources par thématique

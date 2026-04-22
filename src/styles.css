@@ -1,1 +1,220 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ── Variables CSS ── */
+:root {
+  /* Couleurs principales */
+  --color-primary:        #5B21B6;
+  --color-primary-hover:  #7C3AED;
+  --color-primary-light:  #EDE9FE;
+
+  /* Couleurs secondaires */
+  --color-secondary:      #1E3A8A;
+  --color-secondary-hover:#2563EB;
+  --color-accent:         #3B82F6;
+
+  /* Fond & surfaces */
+  --color-bg:             #F5F3FF;
+  --color-surface:        #FFFFFF;
+  --color-surface-hover:  #EDE9FE;
+  --color-border:         #DDD6FE;
+
+  /* Textes */
+  --color-text:           #1E1B4B;
+  --color-text-muted:     #6B7280;
+  --color-text-on-primary:#FFFFFF;
+
+  /* États */
+  --color-success:        #10B981;
+  --color-error:          #EF4444;
+  --color-warning:        #F59E0B;
+
+  /* Typographie */
+  --font-family:          'Poppins', sans-serif;
+  --font-size-xs:         0.75rem;
+  --font-size-sm:         0.875rem;
+  --font-size-base:       1rem;
+  --font-size-lg:         1.125rem;
+  --font-size-xl:         1.25rem;
+  --font-size-2xl:        1.5rem;
+  --font-size-3xl:        1.875rem;
+  --font-size-4xl:        2.25rem;
+
+  /* Espacements */
+  --spacing-xs:   0.25rem;
+  --spacing-sm:   0.5rem;
+  --spacing-md:   1rem;
+  --spacing-lg:   1.5rem;
+  --spacing-xl:   2rem;
+  --spacing-2xl:  3rem;
+  --spacing-3xl:  4rem;
+
+  /* Rayons */
+  --radius-sm:    0.25rem;
+  --radius-md:    0.5rem;
+  --radius-lg:    1rem;
+  --radius-full:  9999px;
+
+  /* Ombres */
+  --shadow-sm:    0 1px 3px rgba(91, 33, 182, 0.08);
+  --shadow-md:    0 4px 12px rgba(91, 33, 182, 0.12);
+  --shadow-lg:    0 10px 30px rgba(91, 33, 182, 0.18);
+
+  /* Transitions */
+  --transition:   0.2s ease;
+  --transition-slow: 0.4s ease;
+
+  /* Navbar */
+  --navbar-height: 64px;
+}
+
+/* ── Reset ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Typographie ── */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-text);
+}
+
+h1 { font-size: var(--font-size-4xl); }
+h2 { font-size: var(--font-size-3xl); }
+h3 { font-size: var(--font-size-2xl); }
+h4 { font-size: var(--font-size-xl); }
+
+p {
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+
+a:hover {
+  color: var(--color-primary-hover);
+}
+
+/* ── Boutons ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: 0.625rem var(--spacing-lg);
+  border-radius: var(--radius-full);
+  font-family: var(--font-family);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all var(--transition);
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-on-primary);
+  border-color: var(--color-primary);
+}
+.btn-primary:hover {
+  background-color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.btn-outline:hover {
+  background-color: var(--color-primary-light);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-text-on-primary);
+  border-color: var(--color-secondary);
+}
+.btn-secondary:hover {
+  background-color: var(--color-secondary-hover);
+  border-color: var(--color-secondary-hover);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+/* ── Utilitaires ── */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-xl);
+}
+
+.section {
+  padding: var(--spacing-3xl) 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text);
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--spacing-2xl);
+}
+
+.text-primary   { color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+.text-muted     { color: var(--color-text-muted); }
+
+/* ── Motif hexagones (fond décoratif) ── */
+.hex-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.hex-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(91, 33, 182, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(30, 58, 138, 0.08) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar       { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-bg); }
+::-webkit-scrollbar-thumb { background: var(--color-primary-light); border-radius: var(--radius-full); }
+::-webkit-scrollbar-thumb:hover { background: var(--color-primary); }

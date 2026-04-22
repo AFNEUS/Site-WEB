@@ -1,0 +1,79 @@
+<nav class="navbar">
+  <div class="navbar__container">
+
+    <!-- Logo -->
+    <a class="navbar__logo" routerLink="/" (click)="closeMenu()">
+      <img src="/img/LogoH_Afneus.png" alt="Logo AFNEUS" class="navbar__logo-img">
+    </a>
+
+    <!-- Liens desktop -->
+    <ul class="navbar__links">
+      <li><a routerLink="/" fragment="reseau" class="navbar__link">Le réseau</a></li>
+      <li><a routerLink="/" fragment="bureau" class="navbar__link">Bureau national</a></li>
+      <li><a routerLink="/" fragment="actualites" class="navbar__link">Actualités</a></li>
+    </ul>
+
+    <!-- Actions à droite -->
+    <div class="navbar__actions">
+
+      @if (auth.isLoggedIn()) {
+        <!-- Utilisateur connecté -->
+        <span class="navbar__user">
+          {{ auth.currentUser()?.prenom }} {{ auth.currentUser()?.nom }}
+        </span>
+
+        @if (auth.isBureau()) {
+          <a routerLink="/bureau" class="btn btn-outline btn-sm">Mon espace</a>
+        } @else {
+          <a routerLink="/mon-espace" class="btn btn-outline btn-sm">Mon espace</a>
+        }
+
+        <button class="btn btn-primary btn-sm" (click)="logout()">Déconnexion</button>
+
+      } @else {
+        <!-- Non connecté -->
+        <a routerLink="/login" class="btn btn-primary btn-sm">Connexion</a>
+      }
+
+    </div>
+
+    <!-- Burger menu mobile -->
+    <button
+      class="navbar__burger"
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="menuOpen()"
+      aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+
+  <!-- Menu mobile -->
+  @if (menuOpen()) {
+    <div class="navbar__mobile">
+      <a routerLink="/" fragment="reseau"    class="navbar__mobile-link" (click)="closeMenu()">Le réseau</a>
+      <a routerLink="/" fragment="bureau"    class="navbar__mobile-link" (click)="closeMenu()">Bureau national</a>
+      <a routerLink="/" fragment="actualites" class="navbar__mobile-link" (click)="closeMenu()">Actualités</a>
+
+      <div class="navbar__mobile-actions">
+        @if (auth.isLoggedIn()) {
+          @if (auth.isBureau()) {
+            <a routerLink="/bureau"     class="btn btn-outline"  (click)="closeMenu()">Mon espace</a>
+          } @else {
+            <a routerLink="/mon-espace" class="btn btn-outline"  (click)="closeMenu()">Mon espace</a>
+          }
+          <button class="btn btn-primary" (click)="logout()">Déconnexion</button>
+        } @else {
+          <a routerLink="/login" class="btn btn-primary" (click)="closeMenu()">Connexion</a>
+        }
+      </div>
+    </div>
+  }
+
+</nav>
+
+<!-- Spacer pour compenser la navbar fixe -->
+<div class="navbar__spacer"></div>
+

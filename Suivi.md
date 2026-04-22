@@ -55,8 +55,8 @@ Objectifs du sprint: Mettre en place l'architecture de base du projet Angular et
 ---
   
 
-# SPRINT 2 ( 19/01 -> 25/01 )
-Objectifs du sprint: 
+# SPRINT 2 ( 20/02 -> 01/03)
+Objectifs du sprint: dévellopper une petite base de mvp 
 
 ## 📝 À faire
 - boubou

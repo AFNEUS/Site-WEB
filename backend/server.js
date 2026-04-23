@@ -5,18 +5,20 @@ import dotenv from 'dotenv';
 // Charge les variables d'environnement
 dotenv.config();
 
-// Imports des routes (à créer)
+// Imports des routes
+import newsRoutes from './routes/news.js';
 // import userRoutes from './routes/users.js';
 // import associationRoutes from './routes/associations.js';
-// import newsRoutes from './routes/news.js';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
 // === MIDDLEWARE ===
 app.use(cors({
-  origin: process.env.CORS_ORIGIN?.split(',') || 'http://localhost:4200',
-  credentials: true
+  origin: ['http://localhost:4200', 'http://localhost:3000', 'https://afneus.fr'],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
 app.use(express.json());
@@ -25,7 +27,7 @@ app.use(express.urlencoded({ extended: true }));
 // === ROUTES ===
 // app.use('/api/users', userRoutes);
 // app.use('/api/associations', associationRoutes);
-// app.use('/api/news', newsRoutes);
+app.use('/api/news', newsRoutes);
 
 // Route de test
 app.get('/api/health', (req, res) => {
